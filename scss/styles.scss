@@ -1,0 +1,90 @@
+@import "variables";
+@import "reset";
+
+.body{
+    font-family:'Kumbh Sans', sans-serif;
+    background-image: url(../images/bg-pattern-top.svg);
+}
+.card{
+    border-radius: 10px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin: 0 auto;
+
+    .light-blue {
+        width: 90%;
+        img{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+        }
+    }
+
+    .player{
+        .face{
+            position: relative;
+            bottom: 55px;
+            img{
+                border-radius: 50%;
+                border: 5px solid $white;
+                margin: 0 auto;
+            }
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .name{
+                color:$very-dark-desaturated-blue;
+                font-size: 18px;
+                font-weight: 700;
+                display: flex;
+                gap:10px;
+                width: 100%;
+            }
+            span{
+                color: $dark-grayish-blue;
+            }
+            .city{
+                color:$dark-grayish-blue;
+            }
+        }
+    }
+
+    .stats{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border-top: solid 1px $dark-grayish-blue;
+        width: 90%;
+        .number{
+            color: $very-dark-desaturated-blue;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .type{
+            color: $dark-grayish-blue;
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+}
+
+
+
+
+
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+    margin-top: 90px;
+    a{
+        color: hsl(228, 45%, 44%);
+    }
+}

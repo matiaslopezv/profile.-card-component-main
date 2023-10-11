@@ -1,3 +1,86 @@
+/*### Neutral*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
+.body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: url(../images/bg-pattern-top.svg);
+}
+
+.card {
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  margin: 0 auto;
+}
+.card .light-blue {
+  width: 90%;
+}
+.card .light-blue img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+}
+.card .player .face {
+  position: relative;
+  bottom: 55px;
+}
+.card .player .face img {
+  border-radius: 50%;
+  border: 5px solid hsl(0, 0%, 100%);
+  margin: 0 auto;
+}
+.card .player .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card .player .info .name {
+  color: hsl(229, 23%, 23%);
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.card .player .info span {
+  color: hsl(227, 10%, 46%);
+}
+.card .player .info .city {
+  color: hsl(227, 10%, 46%);
+}
+.card .stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-top: solid 1px hsl(227, 10%, 46%);
+  width: 90%;
+}
+.card .stats .number {
+  color: hsl(229, 23%, 23%);
+  font-size: 18px;
+  font-weight: 700;
+}
+.card .stats .type {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 90px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
 /*# sourceMappingURL=styles.css.map */
