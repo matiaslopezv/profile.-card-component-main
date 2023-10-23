@@ -1,9 +1,14 @@
 @import "variables";
 @import "reset";
 
-.body{
+body{
     font-family:'Kumbh Sans', sans-serif;
-    background-image: url(../images/bg-pattern-top.svg);
+    height: 100vh;
+    background-color: $background;
+    background-image: url(../images/bg-pattern-top.svg),url(../images/bg-pattern-bottom.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    background-size:contain;
 }
 .card{
     border-radius: 10px;
@@ -11,34 +16,42 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
+    width: 350px;
     margin: 0 auto;
+    margin-top: 100px;
 
     .light-blue {
-        width: 90%;
+        width: 100%;
+        height: 160px;
         img{
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             width: 100%;
         }
+        .face{
+            position:relative;
+            bottom: 65px;
+            left: 110px;
+            width: 140px;
+            .victor{
+                border-radius: 50%;
+                border: 5px solid $white;
+                width: 130px;
+            }
+        }
     }
 
     .player{
-        .face{
-            position: relative;
-            bottom: 55px;
-            img{
-                border-radius: 50%;
-                border: 5px solid $white;
-                margin: 0 auto;
-            }
-        }
-
+        width: 100%;
+        height: 180px;
+        display: flex;
+        justify-content: center;
         .info{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            
             .name{
                 color:$very-dark-desaturated-blue;
                 font-size: 18px;
@@ -46,12 +59,23 @@
                 display: flex;
                 gap:10px;
                 width: 100%;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+
+                p{
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                }
+                .city{
+                    font-size: 1rem;
+                }
             }
             span{
-                color: $dark-grayish-blue;
+                color: $dark-gray;
             }
             .city{
-                color:$dark-grayish-blue;
+                color:$dark-gray;
             }
         }
     }
@@ -60,17 +84,38 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        border-top: solid 1px $dark-grayish-blue;
-        width: 90%;
+        border-top: solid 0.5px $dark-gray;
+        width: 100%;
+        height: 100px;
+        .followers{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+        }
+        .likes{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+        }
+        .photos{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+        }
         .number{
             color: $very-dark-desaturated-blue;
             font-size: 18px;
             font-weight: 700;
+            text-align: center;
         }
         .type{
             color: $dark-grayish-blue;
             font-weight: 400;
             font-size: 14px;
+            text-align: center;
         }
     }
 }
